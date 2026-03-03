@@ -38,7 +38,8 @@ def run(stackargs):
                              choices=["branch", "folder"],
                              types="str")
 
-    # add shelloutconfigs
+    # add execgroup and shelloutconfigs
+    stack.add_execgroup('config0-publish:::config0_core::iac_ci_sync')
     stack.add_shelloutconfig('config0-publish:::config0_core::iac_ci_s3_to_repo')
 
     # initialize
