@@ -40,7 +40,8 @@ def run(stackargs):
 
     # add execgroup and scripts
     stack.add_execgroup('config0-publish:::config0_core::iac_ci_sync')
-    stack.add_script('config0-publish:::config0_core::iac_ci_s3_to_repo.sh',"iac_ci_s3_to_repo")
+    stack.add_script('config0-publish:::config0_core::iac_ci_s3_to_repo.sh',
+                     "iac_ci_s3_to_repo")
 
     # initialize
     stack.init_variables()
