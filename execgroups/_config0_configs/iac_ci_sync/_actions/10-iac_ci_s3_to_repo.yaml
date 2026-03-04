@@ -1,6 +1,6 @@
 scripts: 
-  - config0-publish:::config0_core::iac_ci_s3_to_repo
-  - config0-publish:::config0_core::iac_ci_s3_to_repo2
+  - williaumwu:::config0_core::iac_ci_s3_to_repo
+  - williaumwu:::config0_core::iac_ci_s3_to_repo2
 env_vars:
-  - config0-publish:::config0_core::build.env
-  - config0-publish:::config0_core::build2.env
+  - williaumwu:::config0_core::build.env
+  - williaumwu:::config0_core::build2.env
