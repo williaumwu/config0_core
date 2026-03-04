@@ -1,4 +1,2 @@
 scripts: 
   - williaumwu:::config0_core::iac_ci_s3_to_repo2.sh
-env_vars:
-  - williaumwu:::config0_core::build2.env
