@@ -1,12 +1,6 @@
-asset_type: shelloutconfig
-shelloutconfig: config0-publish:::config0_core::iac_ci_s3_to_repo
-description: Syncs Infrastructure as Code files from S3 to a GitHub repository branch
+scripts: 
+  - config0-publish:::config0_core::iac_ci_s3_to_repo
+  - config0-publish:::config0_core::iac_ci_s3_to_repo2
 env_vars:
-  - IAC_CI_GITHUB_TOKEN
-  - GITHUB_NICKNAME
-  - IAC_CI_REPO
-  - IAC_CI_BRANCH
-  - IAC_SRC_S3_LOC
-  - IAC_REPO_FOLDER
-timeout: 180
-retries: 1
+  - config0-publish:::config0_core::build.env
+  - config0-publish:::config0_core::build2.env

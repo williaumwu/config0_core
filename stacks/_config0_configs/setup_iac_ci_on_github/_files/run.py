@@ -38,13 +38,13 @@ def run(stackargs):
                              choices=["branch", "folder"],
                              types="str")
 
-    # add execgroup and shelloutconfigs
+    # add execgroup and scripts
     stack.add_execgroup('config0-publish:::config0_core::iac_ci_sync')
-    stack.add_shelloutconfig('config0-publish:::config0_core::iac_ci_s3_to_repo')
+    stack.add_script('config0-publish:::config0_core::iac_ci_s3_to_repo')
 
     # initialize
     stack.init_variables()
-    stack.init_shelloutconfigs()
+    stack.init_scripts()
 
     iac_ci_github_token = stack.inputvars.get("iac_ci_github_token")
     if not iac_ci_github_token:

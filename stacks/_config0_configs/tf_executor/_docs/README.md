@@ -42,8 +42,8 @@ This module manages Terraform/OpenTofu resource execution and interacts with the
 ### Execgroups
 - The execgroup identified by `stack.execgroup_ref` with type "cloud_resource"
 
-### Shelloutconfigs
-- No shelloutconfigs are explicitly added in the provided code
+### Scripts
+- No scripts are explicitly added in the provided code
 
 ## License
 <pre>

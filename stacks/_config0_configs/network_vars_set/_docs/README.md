@@ -27,7 +27,7 @@ None
 None
 
 ### Shelloutconfigs
-- [external/cli/execute](https://api-app.config0.com/web_api/v1.0/assets/shelloutconfigs/external/cli/execute)
+- [external/cli/execute](https://api-app.config0.com/web_api/v1.0/assets/scripts/external/cli/execute)
 
 ## License
 <pre>
